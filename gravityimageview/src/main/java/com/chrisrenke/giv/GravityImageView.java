@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 Chris Renke
+ * Copyright 2016 Chris Renke
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -61,8 +61,49 @@ public class GravityImageView extends ImageView {
   public @interface Gravity {
   }
 
+  /**
+   * No scaling will be applied to the source drawable.
+   *
+   * <pre>
+   *      ┏━━━━━━┓
+   *      ┃      ┃
+   *      ┃ ┌──┐ ┃
+   *      ┃ └──┘ ┃
+   *      ┃      ┃
+   *      ┗━━━━━━┛
+   * </pre>
+   */
   public static final int NONE = 1;
+
+  /**
+   * Source drawable will be scaled up so that 100% of the drawable is visible while still being as
+   * large as possible within the bounds of the view. 100% of the view is not necessarily filled
+   * with the source drawable.
+   *
+   * <pre>
+   *      ┏━━━━━━┓
+   *      ┌──────┐
+   *      │      │
+   *      │      │
+   *      └──────┘
+   *      ┗━━━━━━┛
+   * </pre>
+   */
   public static final int INSIDE = 2;
+
+  /**
+   * Source drawable will be scaled up so that 100% of the view is filled by the source drawable.
+   * 100% of the drawable is not necessarily visible within the view's bounds.
+   *
+   * <pre>
+   * ┌────┏━━━━━━┓────┐
+   * │    ┃      ┃    │
+   * │    ┃      ┃    │
+   * │    ┃      ┃    │
+   * │    ┃      ┃    │
+   * └────┗━━━━━━┛────┘
+   * </pre>
+   */
   public static final int CROP = 3;
 
   @IntDef(flag = true,
