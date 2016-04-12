@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GivSample"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScaleMode: none"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|top"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|center_vertical"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|bottom"
+            app:imageScaleMode="none"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|top"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|bottom"
+            app:imageScaleMode="none"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|top"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|center_vertical"
+            app:imageScaleMode="none"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|bottom"
+            app:imageScaleMode="none"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScaleMode: inside"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|top"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|center_vertical"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|bottom"
+            app:imageScaleMode="inside"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|top"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|bottom"
+            app:imageScaleMode="inside"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|top"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|center_vertical"
+            app:imageScaleMode="inside"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_red_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|bottom"
+            app:imageScaleMode="inside"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScaleMode: crop"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|top"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|center_vertical"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="left|bottom"
+            app:imageScaleMode="crop"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|top"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="center_horizontal|bottom"
+            app:imageScaleMode="crop"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|top"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|center_vertical"
+            app:imageScaleMode="crop"
+            />
+
+        <com.chrisrenke.giv.GravityImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:src="@drawable/dinosaur_120"
+            app:imageGravity="right|bottom"
+            app:imageScaleMode="crop"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
