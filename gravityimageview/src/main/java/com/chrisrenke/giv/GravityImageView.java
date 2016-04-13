@@ -25,39 +25,43 @@ import android.support.annotation.IntDef;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static android.widget.ImageView.ScaleType.MATRIX;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
 /**
- * {@link ImageView} variant that allows for {@code imageGravity} and {@code imageScaleMode} to be
- * defined for the image bitmap itself, instead of just the view relative to its parent.
+ * A small {@link ImageView} variant that allows for {@code imageGravity} and {@code
+ * imageScaleMode} to be defined for the image bitmap itself, instead of just the view relative to
+ * its parent. Great for large "hero image" content.
  */
 public class GravityImageView extends ImageView {
 
-  public static final int BOTTOM = 0b000001;
-  public static final int CENTER_VERTICAL = 0b000010;
-  public static final int TOP = 0b000100;
-  public static final int LEFT = 0b001000;
-  public static final int CENTER_HORIZONTAL = 0b010000;
-  public static final int RIGHT = 0b100000;
+  public static final int BOTTOM            = 0b00000001;
+  public static final int CENTER_VERTICAL   = 0b00000010;
+  public static final int TOP               = 0b00000100;
+  public static final int LEFT              = 0b00001000;
+  public static final int CENTER_HORIZONTAL = 0b00010000;
+  public static final int RIGHT             = 0b00100000;
+  public static final int START             = 0b01000000;
+  public static final int END               = 0b10000000;
   public static final int CENTER = CENTER_HORIZONTAL | CENTER_VERTICAL;
-  public static final int START = 0b01000000;
-  public static final int END = 0b10000000;
 
   @IntDef(flag = true,
       value = {
-          BOTTOM, //
-          CENTER_VERTICAL, //
-          TOP, //
           LEFT, //
           CENTER_HORIZONTAL, //
           RIGHT, //
-          CENTER, //
           START, //
-          END
+          END, //
+          BOTTOM, //
+          CENTER_VERTICAL, //
+          TOP, //
+          CENTER
       }) //
+  @Retention(RetentionPolicy.SOURCE)
   public @interface Gravity {
   }
 
@@ -112,6 +116,7 @@ public class GravityImageView extends ImageView {
           INSIDE, //
           CROP
       }) //
+  @Retention(RetentionPolicy.SOURCE)
   public @interface ScaleMode {
   }
 
