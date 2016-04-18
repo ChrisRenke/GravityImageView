@@ -31,10 +31,10 @@ gravityImageView.setImageScaleMode(INSIDE);
 
 ## Gradle
 
-As soon at the library is live, just add this line to your build.gradle:
+Just add this line to your build.gradle:
 
 ```groovy
-compile 'com.chrisrenke.giv:gravityimageview:1.0'
+compile 'com.chrisrenke.giv:giv:1.0'
 ```
 
 
